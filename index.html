@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Quizology</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li id="high-score"><a href="highscore.html">View Highscore →</a></li>
-            <li id="countdown">Time: </li>
-        </ul>
-    </nav>
-</header>
 <body>
-    <!--<div class="intro">
+    <div class="intro">
         <h1>Welcome to Quizology 👋</h1>
-            <p>Answer all the questions correctly to get your highscore 🎉</p>-->
-        <div class="main"><h3>This is a question</h3><div>
-        <div id="options">
-            <!--    <button>Option 1</button>
-            <button>Option 2</button>
-            <button>Option 3</button>
-            <button>Option 4</button>-->
+            <p>Let's get started 🎉</p>
+        <div>
+            <button id="start-button">Get Started</button>
         </div>
     </div>
+    <div id="quiz-container">
+        <div id="question-container">
+          <h2 id="question">This is the question</h2>
+          <ul id="answer-options">
+            <li class="answer">Answer 1</li>
+            <li class="answer">Answer 2</li>
+            <li class="answer">Answer 3</li>
+            <li class="answer">Answer 4</li>
+          </ul>
+        </div>
+        <div id="timer">Time: <span id="time-remaining">60</span></div>
+      </div>
+      <div id="game-over-container">
+        <h2>Game Over</h2>
+        <label for="initials">Enter your initials:</label>
+        <input type="text" id="initials" maxlength="2">
+        <button id="save-score">Save My Score</button>
+      </div>
+    </main>
 <script src="script.js"></script>
 </body>
 </html>
